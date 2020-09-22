@@ -1,0 +1,280 @@
+
+*** Running vivado
+    with args -log fir_filter.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source fir_filter.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source fir_filter.tcl -notrace
+Command: synth_design -top fir_filter -part xc7k70tfbv676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11516 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 469.484 ; gain = 170.414
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'fir_filter' [C:/Users/Milind/project_4/project_4.srcs/sources_1/new/fir_filter.v:1]
+	Parameter N bound to: 8 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element delayholder_reg[7] was removed.  [C:/Users/Milind/project_4/project_4.srcs/sources_1/new/fir_filter.v:20]
+WARNING: [Synth 8-6014] Unused sequential element finsummation_reg was removed.  [C:/Users/Milind/project_4/project_4.srcs/sources_1/new/fir_filter.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'fir_filter' (1#1) [C:/Users/Milind/project_4/project_4.srcs/sources_1/new/fir_filter.v:1]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 533.398 ; gain = 234.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 533.398 ; gain = 234.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 533.398 ; gain = 234.328
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 533.398 ; gain = 234.328
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   8 Input     23 Bit       Adders := 1     
++---Registers : 
+	               23 Bit    Registers := 1     
+	               20 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module fir_filter 
+Detailed RTL Component Info : 
++---Adders : 
+	   8 Input     23 Bit       Adders := 1     
++---Registers : 
+	               23 Bit    Registers := 1     
+	               20 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design fir_filter has port finsummation2[23] driven by constant 0
+INFO: [Synth 8-3886] merging instance 'finsummation2_reg[3]' (FD) to 'output_sample1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'finsummation2_reg[4]' (FD) to 'output_sample1_reg[1]'
+INFO: [Synth 8-3886] merging instance 'finsummation2_reg[5]' (FD) to 'output_sample1_reg[2]'
+INFO: [Synth 8-3886] merging instance 'finsummation2_reg[6]' (FD) to 'output_sample1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'finsummation2_reg[7]' (FD) to 'output_sample1_reg[4]'
+INFO: [Synth 8-3886] merging instance 'finsummation2_reg[8]' (FD) to 'output_sample1_reg[5]'
+INFO: [Synth 8-3886] merging instance 'finsummation2_reg[9]' (FD) to 'output_sample1_reg[6]'
+INFO: [Synth 8-3886] merging instance 'finsummation2_reg[10]' (FD) to 'output_sample1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'finsummation2_reg[11]' (FD) to 'output_sample1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'finsummation2_reg[12]' (FD) to 'output_sample1_reg[9]'
+INFO: [Synth 8-3886] merging instance 'finsummation2_reg[13]' (FD) to 'output_sample1_reg[10]'
+INFO: [Synth 8-3886] merging instance 'finsummation2_reg[14]' (FD) to 'output_sample1_reg[11]'
+INFO: [Synth 8-3886] merging instance 'finsummation2_reg[15]' (FD) to 'output_sample1_reg[12]'
+INFO: [Synth 8-3886] merging instance 'finsummation2_reg[16]' (FD) to 'output_sample1_reg[13]'
+INFO: [Synth 8-3886] merging instance 'finsummation2_reg[17]' (FD) to 'output_sample1_reg[14]'
+INFO: [Synth 8-3886] merging instance 'finsummation2_reg[18]' (FD) to 'output_sample1_reg[15]'
+INFO: [Synth 8-3886] merging instance 'finsummation2_reg[19]' (FD) to 'output_sample1_reg[16]'
+INFO: [Synth 8-3886] merging instance 'finsummation2_reg[20]' (FD) to 'output_sample1_reg[17]'
+INFO: [Synth 8-3886] merging instance 'finsummation2_reg[21]' (FD) to 'output_sample1_reg[19]'
+INFO: [Synth 8-3886] merging instance 'finsummation2_reg[22]' (FD) to 'output_sample1_reg[19]'
+INFO: [Synth 8-3886] merging instance 'output_sample1_reg[18]' (FD) to 'output_sample1_reg[19]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\output_sample1_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\output_sample1_reg[17] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 672.625 ; gain = 373.555
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 673.566 ; gain = 374.496
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 673.566 ; gain = 374.496
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 674.559 ; gain = 375.488
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 674.559 ; gain = 375.488
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 674.559 ; gain = 375.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 674.559 ; gain = 375.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 674.559 ; gain = 375.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 674.559 ; gain = 375.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name               | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|fir_filter  | delayholder_reg[6][19] | 7      | 20    | YES          | NO                 | YES               | 20     | 0       | 
++------------+------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |LUT2   |    20|
+|3     |SRL16E |    20|
+|4     |FDCE   |    26|
+|5     |FDRE   |    40|
+|6     |IBUF   |    22|
+|7     |OBUF   |    44|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   173|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 674.559 ; gain = 375.488
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 674.559 ; gain = 375.488
+Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 674.559 ; gain = 375.488
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 790.441 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+32 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:29 . Memory (MB): peak = 790.441 ; gain = 491.371
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 790.441 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Milind/project_4/project_4.runs/synth_1/fir_filter.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file fir_filter_utilization_synth.rpt -pb fir_filter_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Dec  2 12:53:21 2019...

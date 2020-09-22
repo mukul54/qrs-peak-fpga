@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../utkarsh.srcs/sources_1/new/clkDivider.v" \
+"../../../../utkarsh.srcs/sources_1/new/complete.v" \
+"../../../../utkarsh.srcs/sources_1/new/dftth.v" \
+"../../../../utkarsh.srcs/sources_1/new/dr.v" \
+"../../../../utkarsh.srcs/sources_1/new/iht.v" \
+"../../../../utkarsh.srcs/sources_1/new/qrsf.v" \
+"../../../../utkarsh.srcs/sources_1/new/simulation.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

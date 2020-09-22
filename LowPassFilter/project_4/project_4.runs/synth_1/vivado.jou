@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Dec  2 12:52:27 2019
+# Process ID: 5828
+# Current directory: C:/Users/Milind/project_4/project_4.runs/synth_1
+# Command line: vivado.exe -log fir_filter.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fir_filter.tcl
+# Log file: C:/Users/Milind/project_4/project_4.runs/synth_1/fir_filter.vds
+# Journal file: C:/Users/Milind/project_4/project_4.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source fir_filter.tcl -notrace

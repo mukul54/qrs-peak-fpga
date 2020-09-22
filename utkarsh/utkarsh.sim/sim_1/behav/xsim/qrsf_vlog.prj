@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../project_ECG_final.srcs/sources_1/new/clkDivider.v" \
+"../../../../project_ECG_final.srcs/sources_1/new/complete.v" \
+"../../../../project_ECG_final.srcs/sources_1/new/dftth.v" \
+"../../../../project_ECG_final.srcs/sources_1/new/dr.v" \
+"../../../../project_ECG_final.srcs/sources_1/new/iht.v" \
+"../../../../project_ECG_final.srcs/sources_1/new/qrsf.v" \
+"../../../../project_ECG_final.srcs/sources_1/new/simulation.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

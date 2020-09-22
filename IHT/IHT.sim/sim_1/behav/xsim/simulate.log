@@ -1,0 +1,31 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+in=    x out=    x 
+in=    2 out=    X 
+in=    3 out=    X 
+in=    4 out=    X 
+in=    5 out=    X 
+in=    4 out=    X 
+in=    3 out=    X 
+in=    2 out=    X 
+in=    1 out=    X 
+in=    2 out=    2 
+in=    3 out=    2 
+in=    4 out=    2 
+in=    5 out=    2 
+in=    4 out=    2 
+in=    2 out=    2 
+in=    3 out=    2 
+in=    4 out=    2 
+in=    5 out=    3 
+in=    4 out=    3 
+in=    1 out=    3 
+in=    4 out=    3 
+in=    2 out=    3 
+in=    3 out=    3 
+in=    1 out=    3 
+in=    2 out=    3 
+in=    3 out=    2 
+in=    4 out=    2 
+in=    4 out=    4 
+$finish called at time : 151 ns : File "C:/Users/Milind/Desktop/Extra/testIht.v" Line 43
